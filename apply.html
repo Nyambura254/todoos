@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sup/special</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="bg-dark mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar justify-content-between">
+            <a class="navbar-brand"><img src="images/mmust.png"></a>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                id="searchtextbox" />
+            </form>
+            <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn1"><a href="login.html"> Logout</button></a>
+           <div class="social-icon">
+                 <a href="activities.html"><i class="fa fa-book"></i></a>
+
+                    <p style="margin-bottom: 2px; padding: 4px; color: white;">History</p>
+              </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="todo-outer">
+    <div class="container">
+      <div class="row justify-content-md-center">
+        <div class="col-sm-12 col-md-8">
+          <h1 align="center">Apply Online Special/Supplementary Exams </h1>
+          <div class="todo-inner">
+            <div class="form-row">
+              <div class="col-8 mr-sm-2">
+                <div class="custom-select" style="width:200px;">
+                    <select>
+                     
+                      <option value="1">Special Exam</option>
+                      <option value="2">Supplementary Exam</option>
+                     
+                    </select>
+                  </div>
+                <input type="text" class="form-control" placeholder="Enter Course Code" id="addtaskinput" />
+                <input type="hidden" id="saveindex">
+              </div>
+              <button type="button" class="btn btn-success mr-sm-2" id="addtaskbtn">
+                Add Code
+              </button>
+              <button type="button" class="btn btn-success mr-sm-2" id="savetaskbtn" style="display: none;">
+                Save Task
+              </button>
+              <button type="button" id="deleteallbtn" class="btn btn-danger">
+                Delete All
+              </button>
+            </div>
+            <div class="to-do-output">
+              <table class="table table-striped mt-3 mb-0" id="addedtasklist">
+                
+              </table>
+              <button type="button" class="btn btn-success mr-sm-2"  style="float:right" id="applybtn">
+               Apply
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+            <div id="socialmedia">
+            <footer>
+
+                    <h3><a href="http://www.mmust.ac.ke/">&copy; Copyright MMUST 2020. Design & Development by Paul</a></h3>
+            </footer>
+           
+
+  <script>
+  applybtn.onclick = function() {
+    alert('Application sent Successifully');
+  };
+</script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
